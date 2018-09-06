@@ -1,0 +1,762 @@
+*{
+    font-family:"微软雅黑";
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+/*标题样式*/
+.title{
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+.title .bigBox{
+    width: 1200px;
+    display: flex;
+
+}
+.title .bigBox .icon{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
+.title .box1{
+    width: 300px;
+    height: 80px;
+    background-color:blue;
+}
+.title .box1 img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px auto 8px;
+}
+
+.title .bigBox .box2{
+    padding:0 22px;
+
+}
+.title .bigBox .box2 h4{
+    margin-top:17px;
+    font-size: 16px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.title .bigBox .box2 p{
+    font-size: 12px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+
+/*banner*/
+.swiper-container {
+    width: 100%;
+
+}
+.banner{
+    width: 100%;
+
+    /*background-image: url('../image/one-banner1.jpg');*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.banner .con{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.banner .con h1{
+    text-align: center;
+    font-size:75px;
+}
+
+.banner .con h3{
+    text-align: center;
+    font-size: 34px;
+
+}
+.banner .con .box{
+    width: 128px;
+    height: 52px;
+    margin: 0 auto;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 52px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+/*1级标题*/
+.one{
+    margin-top: 60px;
+    width: 100%;
+    height: 80px;
+    position: relative;
+
+
+}
+.one h1{
+    text-align: center;
+    font-size: 24px;
+    color: rgba(0,0,0,0.7);
+}
+.one p{
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+    height: 44px;
+}
+.one  .after{
+    width: 75px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+
+/*洛奇品牌列表*/
+.itm{
+    margin-top: 40px;
+}
+.itm .container{
+    width: 1200px;
+
+
+
+
+}
+.itm .container li{
+    padding: 0 12px 22px;
+
+
+
+}
+.itm .container li .box{
+
+    padding-bottom: 19.11px;
+    border:1px solid rgba(0,0,0,0.4);
+    transition: all .5s ;
+}
+
+.itm .container li .box:hover{
+    transform:translateY(-5PX);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) ;
+}
+/*.itm .container li:nth-child(1) .box{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*padding-bottom: 0px;*/
+/*}*/
+/*.itm .container li:nth-child(9) .box{*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*padding-bottom:0px;*/
+/*}*/
+
+
+.itm .container li img:nth-child(1){
+    display: block;
+    width: 100%;
+    height: auto;;
+}
+.itm .container li:nth-child(1) img{
+    height: 100%;
+}
+.itm .container li:nth-child(9) img{
+    height: 100%;
+}
+
+.itm .container li img:nth-child(2){
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 19px;
+}
+
+/*设计师*/
+.designer{
+    overflow:hidden;
+    width: 1200px;
+    margin: 40px auto 0;
+    height: 500px;
+
+}
+
+.designer .img{
+    height: 500px;
+    background-image: url("../image/one-designer-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.designer .text{
+    padding: 60px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.designer .text img{
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+
+}
+.designer .text dl{
+    margin-top: 20px;
+}
+.designer .text dt{
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+
+}
+.designer .text dd{
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+
+}
+.designer .text p{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+/*设计师顾问*/
+.cunsultant{
+    width: 1200px;
+    margin: 24px auto 0;
+
+}
+.cunsultant ul{
+     display: flex;
+     flex-wrap: wrap;
+ }
+.cunsultant ul:nth-child(2){
+    justify-content: center;
+}
+.cunsultant li{
+
+    padding: 16px;
+    width: 20%;
+}
+.cunsultant li img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.cunsultant li h5{
+     text-align: center;
+ }
+.cunsultant li p{
+    text-align: center;
+}
+
+
+
+/*客户*/
+.cust{
+    width: 1200px;
+    margin: 40px auto 0;
+
+}
+
+.cust ul{
+    display: flex;
+
+}
+.cust ul li{
+    width: 25%;
+    padding:0 12px ;
+}
+
+.cust ul li img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+
+/*技师*/
+.ter{
+    width: 1200px;
+    margin: 40px auto 0;
+    display: flex;
+
+}
+.ter .box{
+    display: flex;
+    width:33.333%;
+
+}
+.ter .box .img{
+    width:33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ter .box img{
+    display: block;
+
+}
+.ter .box .text p{
+    color: rgba(0,0,0,0.4);
+}
+
+/*预约*/
+.bespeak{
+    width: 1200px;
+    margin: 40px auto 0;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.bespeak .box{
+    width: 33.33%;
+}
+
+.bespeak .box1 input:nth-child(2){
+     margin-top:20px ;
+
+ }
+.bespeak .box1 button{
+    width: 160px;
+    height: 36px;
+    color:white;
+    margin-top:20px ;
+    background-color: red;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+.bespeak .box1 select{
+    display: block;
+    margin-top:20px ;
+
+}
+
+.bespeak .leftbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bespeak .leftbox img{
+    width: 37.5%;
+    height: auto ;
+}
+.bespeak .leftbox p{
+    color: rgba(0,0,0,0.4);
+}
+
+.bespeak .leftbox .gg{
+    width: 20%;
+    height: 1px;
+    margin-top: 20px;
+    border:1px solid  rgba(0,0,0,0.4);
+}
+
+.bespeak .rightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bespeak .rightbox img{
+    width: 50%;
+    height: auto;
+
+}
+.bespeak .rightbox p{
+    color: rgba(0,0,0,0.4);
+}
+
+/*底部*/
+.bottom{
+    width:100%;
+    padding:32px 16px 0 ;
+    background-color: #333333;
+
+}
+.bottom ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%  ;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+
+}
+
+.bottom ul li{
+    width: 20%  ;
+    color: white;
+    padding:0 16px ;
+
+}
+.bottom ul li h2{
+    font-size: 20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.bottom ul li p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+
+.bottom .box{
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*小小瓶*/
+@media screen and (min-width:0px){
+    .title .bigBox{
+        background-color: blue;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .title .box1 img{
+        margin-left: 12px;
+    }
+
+    .title .bigBox .icon{
+        display: block;
+    }
+
+    .title .bigBox .box2{
+        display: none;
+    }
+
+    /*banner*/
+    .banner .con h1{
+
+        font-size:24px;
+    }
+
+    .banner .con h3{
+
+        font-size:16px;
+    }
+
+    .banner .con .box{
+
+        font-size: 24px;
+
+    }
+
+    /*洛奇品牌列表*/
+    .itm .container{
+        width: 100%;
+
+
+
+
+    }
+
+    /*设计师*/
+    .designer{
+        width: 100%;
+
+    }
+
+    .designer .text img{
+
+        width: 300px;
+        height: auto;
+
+    }
+    /*设计师顾问*/
+    .cunsultant{
+        width: 100%;
+
+    }
+    .cunsultant ul{
+        width:100%;
+    }
+    .cunsultant li{
+
+        width: 50%;
+    }
+
+    /*客户*/
+    .cust{
+        width: 100%;
+
+
+    }
+
+    /*技师*/
+    .ter{
+        width: 100%;
+
+
+    }
+    .ter .box{
+        width: 50%;
+    }
+
+    .ter .box:nth-child(3){
+        display: none;
+
+    }
+
+    /*预约*/
+
+    .bespeak{
+        width: 100%;
+
+    }
+
+
+    .bespeak .box{
+        width:100%;
+    }
+
+
+    /*底部*/
+    .bottom ul li{
+        width: 100%  ;
+
+
+    }
+
+}
+
+
+
+/* 平板:小屏幕 col-sm-   >768px */
+@media screen and (min-width:768px){
+    .title .bigBox{
+        background-color: white;
+
+    }
+    .title .box1 img{
+        margin:8px auto 8px;
+    }
+    .title .bigBox{
+        width: 100%;
+    }
+    .title .bigBox .box2{
+        padding:0 10px;
+
+    }
+    .title .bigBox .icon{
+        display: none;
+    }
+    .title .bigBox .box2{
+        display: block;
+    }
+    /*banner*/
+    /*.banner {*/
+
+        /*height: 400px;*/
+    /*}*/
+
+    /*banner*/
+    .banner .con h1{
+
+        font-size:72px;
+    }
+
+    .banner .con h3{
+
+        font-size:34px;
+    }
+
+    .banner .con .box{
+
+        font-size: 28px;
+
+    }
+    .designer .text img{
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    /*设计师顾问*/
+    .cunsultant li{
+
+        width: 20%;
+    }
+
+
+    /*技师*/
+
+
+    .ter .box{
+
+        width:33.333%;
+
+    }
+    .ter .box:nth-child(3){
+        display: flex;
+
+    }
+
+    /*预约*/
+    .bespeak .box{
+        width: 33.33%;
+    }
+
+    /*底部*/
+    .bottom ul li{
+        width: 20%  ;
+
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+/* PC屏幕:普通屏幕 col-md-   >992px */
+@media screen and (min-width:992px){
+    .title .bigBox{
+        width: 100%;
+    }
+    .title .bigBox .box2{
+        padding:0 10px;
+
+    }
+
+    /*banner*/
+    /*.banner {*/
+
+        /*height: 525px;*/
+    /*}*/
+
+}
+
+
+
+
+
+
+
+
+
+
+/* PC屏幕:普通屏幕 col-lg-   >1200px */
+@media screen and (min-width:1200px){
+    .title .bigBox{
+        width: 1200px;
+        display: flex;
+
+    }
+    .title .bigBox .box2{
+        padding:0 22px;
+
+    }
+    /*banner*/
+    /*.banner {*/
+
+        /*height: 650px;*/
+    /*}*/
+
+    /*洛奇品牌列表*/
+    .itm .container{
+        width:1200px;
+
+
+
+    }
+
+    .designer{
+
+        width: 1200px;
+
+    }
+
+    /*设计师顾问*/
+    .cunsultant{
+        width: 1200px;
+
+    }
+
+    /*客户*/
+    .cust{
+        width: 1200px;
+
+
+    }
+
+    /*技师*/
+    .ter{
+        width: 1200px;
+
+
+    }
+
+    /*预约*/
+    .bespeak{
+        width: 1200px;
+
+    }
+
+}

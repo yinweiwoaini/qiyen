@@ -1,0 +1,534 @@
+*{
+    font-family: "微软雅黑";
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+/*标题样式*/
+.title{
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+.title .bigBox{
+    width: 1200px;
+    display: flex;
+
+}
+.title .bigBox .icon{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
+.title .box1{
+    width: 300px;
+    height: 80px;
+    background-color:blue;
+}
+.title .box1 img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px auto 8px;
+}
+
+.title .bigBox .box2{
+    padding:0 22px;
+
+}
+.title .bigBox .box2 h4{
+    margin-top:17px;
+    font-size: 16px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.title .bigBox .box2 p{
+    font-size: 12px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+/*企业简介*/
+.enterprise{
+    width:1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+.enterprise .box{
+    width: 150px;
+    font-size: 18px;
+    padding: 5px 0;
+    text-align:center;
+    color: rgba(0,0,0,0.7);
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #F9F9F9;
+}
+
+
+
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('../image/5-banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .con{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.banner .con h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+.banner .con img{
+    display: block;
+    width: 70%;
+    height: 70%;
+}
+
+/*标题*/
+.bTitle{
+    margin-top: 50px;
+}
+.bTitle img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*职位晋升*/
+.jobup{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.jobup ul li{
+    padding: 0 10px 20px;
+
+}
+
+.jobup ul li img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top:20px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*预约*/
+.bespeak{
+    width: 1200px;
+    margin: 40px auto 0;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bespeak .box{
+    width: 33.33%;
+}
+
+.bespeak .box1 input:nth-child(2){
+    margin-top:20px ;
+
+}
+.bespeak .box1 button{
+    width: 160px;
+    height: 36px;
+    color:white;
+    margin-top:20px ;
+    background-color: red;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+.bespeak .box1 select{
+    display: block;
+    margin-top:20px ;
+
+}
+
+.bespeak .leftbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bespeak .leftbox img{
+    width: 37.5%;
+    height: auto ;
+}
+.bespeak .leftbox p{
+    color: rgba(0,0,0,0.4);
+}
+
+.bespeak .leftbox .gg{
+    width: 20%;
+    height: 1px;
+    margin-top: 20px;
+    border:1px solid  rgba(0,0,0,0.4);
+}
+
+.bespeak .rightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bespeak .rightbox img{
+    width: 50%;
+    height: auto;
+
+}
+.bespeak .rightbox p{
+    color: rgba(0,0,0,0.4);
+}
+
+
+
+/*底部*/
+.bottom{
+    width:100%;
+    padding:32px 16px 0 ;
+    background-color: #333333;
+
+}
+.bottom ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%  ;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+
+}
+
+.bottom ul li{
+    width: 20%  ;
+    color: white;
+    padding:0 16px ;
+
+}
+.bottom ul li h2{
+    font-size: 20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.bottom ul li p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+
+.bottom .box{
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*小小瓶*/
+@media screen and (min-width:0px){
+    .title .bigBox{
+        background-color: blue;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .title .box1 img{
+        margin-left: 12px;
+    }
+
+    .title .bigBox .icon{
+        display: block;
+    }
+
+    .title .bigBox .box2{
+        display: none;
+    }
+
+    /*banner*/
+    .banner .con h1{
+
+        font-size:24px;
+    }
+
+    .banner .con h3{
+
+        font-size:16px;
+    }
+
+    .banner .con .box{
+
+        font-size: 24px;
+
+    }
+
+    /*标题*/
+    .bTitle img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*职位晋升*/
+    .jobup{
+        width: 100%;
+
+    }
+
+
+
+
+    /*企业详情*/
+    .enterprise{
+        width:100%;
+
+
+    }
+
+
+    /*预约*/
+
+    .bespeak{
+        width: 100%;
+
+    }
+
+
+    .bespeak .box{
+        width:100%;
+    }
+
+
+    /*底部*/
+    .bottom ul li{
+        width: 100%  ;
+
+
+    }
+
+
+
+
+}
+
+
+/*标题单独*/
+@media screen and (min-width:546px){
+    /*标题*/
+    .bTitle img{
+        width: 546px;
+        height: 44px;
+    }
+
+}
+
+
+
+/* 平板:小屏幕 col-sm-   >768px */
+@media screen and (min-width:768px){
+    .title .bigBox{
+        background-color: white;
+
+    }
+    .title .box1 img{
+        margin:8px auto 8px;
+    }
+    .title .bigBox{
+        width: 100%;
+    }
+    .title .bigBox .box2{
+        padding:0 10px;
+
+    }
+    .title .bigBox .icon{
+        display: none;
+    }
+    .title .bigBox .box2{
+        display: block;
+    }
+    /*banner*/
+    .banner {
+
+        height: 400px;
+    }
+
+    /*banner*/
+    .banner .con h1{
+
+        font-size:72px;
+    }
+
+    .banner .con h3{
+
+        font-size:34px;
+    }
+
+    .banner .con .box{
+
+        font-size: 28px;
+
+    }
+
+
+
+
+    /*预约*/
+    .bespeak .box{
+        width: 33.33%;
+    }
+
+    /*底部*/
+    .bottom ul li{
+        width: 20%  ;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* PC屏幕:普通屏幕 col-md-   >992px */
+@media screen and (min-width:992px){
+    .title .bigBox{
+        width: 100%;
+    }
+    .title .bigBox .box2{
+        padding:0 10px;
+
+    }
+
+    /*banner*/
+    .banner {
+
+        height: 525px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* PC屏幕:普通屏幕 col-lg-   >1200px */
+@media screen and (min-width:1200px){
+    .title .bigBox{
+        width: 1200px;
+        display: flex;
+
+    }
+    .title .bigBox .box2{
+        padding:0 22px;
+
+    }
+    /*banner*/
+    .banner {
+
+        height: 650px;
+    }
+
+    /*企业详情*/
+    .enterprise{
+        width:1200px;
+
+
+    }
+
+    /*职位晋升*/
+    .jobup{
+        width: 1200px;
+
+    }
+
+
+    /*预约*/
+    .bespeak{
+        width: 1200px;
+
+    }
+
+
+
+
+
+
+}
