@@ -54,215 +54,80 @@ a{
     color: rgba(0,0,0,0.6);
 }
 
-/*banner*/
-
-
-/*banner*/
-.swiper-container {
-    width: 100%;
-
-}
-.banner{
-    width: 100%;
-
-    /*background-image: url('../image/one-banner1.jpg');*/
-    /*background-size: cover;*/
-    /*background-position: center;*/
-}
-.banner img{
-    width: 100%;
-    height: auto;
-}
-
-.banner .con{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.banner .con h1{
-    text-align: center;
-    font-size:75px;
-}
-
-.banner .con h3{
-    text-align: center;
-    font-size: 34px;
-
-}
-.banner .con .box{
-    width: 128px;
-    height: 52px;
-    margin: 0 auto;
-    border: 1px solid white;
-    text-align: center;
-    line-height: 52px;
-    font-size: 28px;
-    margin-top: 20px;
-}
-
-
-/*设计师*/
-.designer{
-    overflow:hidden;
+/*导航标题*/
+.texttitle{
     width: 1200px;
-    margin: 40px auto 0;
-    height: 500px;
-
-}
-
-.designer .img{
-    height: 500px;
-    background-image: url("../image/one-designer-1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-.designer .text{
-    padding: 60px;
-    height: 100%;
-    border: 1px solid rgba(0,0,0,0.2);
-}
-.designer .text img{
-    display: block;
-    margin:0 auto;
-    width: 100%;
-    height: auto;
-
-}
-.designer .text dl{
-    margin-top: 20px;
-}
-.designer .text dt{
-    text-align: center;
-    font-size: 24px;
-    line-height: 26px;
-
-}
-.designer .text dd{
-    text-align: center;
+    margin: 32px auto  29px;
+    color: #333;
     font-size: 14px;
-    line-height: 26px;
-
-}
-.designer .text p{
-    margin-top: 40px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-
 }
 
-.con{
-    padding:80px 0 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.con .line{
-    width: 96px;
-    height: 1px;
-    border-top: 1px solid black;
-    /*margin-top: 15px;*/
-    /*margin-bottom: 15px;*/
-}
-.con p{
-    color: rgba(0,0,0,0.4);
-}
-/*案例展示*/
-.imgbox{
+/*图片内容*/
+.imgBox{
     width: 1200px;
-    margin: 0 auto;
-    padding-bottom:25% ;
-    background-image: url(../image/3-anli-1.jpg);
-    background-size: cover;
-    background-position:center;
-    margin-bottom: 30px;
+    margin: 0px auto ;
+    /*display: flex;*/
+    font-size: 14px;
     position: relative;
-    overflow: hidden;
-
-}
-.anlib .imgbox:nth-child(2){
-    background-image: url(../image/3-anli-2.jpg);
-
-}
-.anlib .imgbox:nth-child(3){
-    background-image: url(../image/3-anli-3.jpg);
-
-}
-.anlib .imgbox:nth-child(4){
-    background-image: url(../image/3-anli-4.jpg);
-
-}
-.anlib .imgbox:nth-child(5){
-    background-image: url(../image/3-anli-5.jpg);
-
-}
-.anlib .imgbox:nth-child(11){
-    background-image: url(../image/3-anli-10.jpg);
-
-}
-.anlib .imgbox:nth-child(7){
-    background-image: url(../image/3-anli-7.jpg);
-
-}
-.anlib .imgbox:nth-child(8){
-    background-image: url(../image/3-anli-8.jpg);
-
-}
-.anlib .imgbox:nth-child(9){
-    background-image: url(../image/3-anli-9.jpg);
-
 }
 
-.imgbox .text{
-    width: 440px;
-    height: 135px;
-    background: rgba(255,255,255,0.6);
+.imgBox .leftbox{
+    float: left;
+    width: 180px;
+    /*height: 400px;*/
+    border: 1px solid rgba(0,0,0,0.2);
+
+}
+.imgBox .leftbox dl dt{
+    font-size: 16px;
+    border-bottom:1px solid rgba(0,0,0,0.2) ;
+    font-weight: normal;
+    padding-left: 30px;
+    line-height: 40px;
+ }
+
+.imgBox .leftbox dl dd{
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.imgBox .rightbox{
+    float: left;
+    width: calc(100% - 180px);
     position: absolute;
-    left: 30px;
-    bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 180px;
 
 }
-
-.imgbox .line{
-    width: 96px;
-    height: 1px;
-    border-top: 1px solid black;
-    /*margin-top: 15px;*/
-    /*margin-bottom: 15px;*/
+.imgBox .null{
+    width: calc(100% - 180px);
+    padding-bottom: 70%;
 }
-.imgbox p{
-    color: rgba(0,0,0,0.8);
+.imgBox .rightbox ul{
+    width: 100%;
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.imgBox .rightbox ul li{
+    width: 22%;
+}
+.imgBox .rightbox ul li img{
+    width: 100%;
+}
+
+.imgBox .rightbox ul li .text{
+    font-size: 14px;
     text-align: center;
-
+    line-height: 20px;
 }
 
-.anbox h2{
-    text-align: center;
-    font-size: 18px;
-    color: rgba(0,0,0,0.8);
-    margin-top:5px;
 
 
-}
-.anbox p{
-    text-align: center;
-    color: rgba(0,0,0,0.6);
 
-}
 
 
 
@@ -384,36 +249,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*小小瓶*/
 @media screen and (min-width:0px){
     .title .bigBox{
@@ -434,52 +269,39 @@ a{
         display: none;
     }
 
-    /*banner*/
-    .banner .con h1{
-
-        font-size:24px;
-    }
-
-    .banner .con h3{
-
-        font-size:16px;
-    }
-
-    .banner .con .box{
-
-        font-size: 24px;
-
-    }
-    /*设计师*/
-    .designer{
+    .imgBox{
         width: 100%;
 
     }
-
-    .designer .text img{
-
-        width: 300px;
-        height: auto;
+    .imgBox .null{
+        width:100%;
 
     }
 
-
-    /*<!--案例展示-->*/
-    .imgbox{
+    /*地图文字*/
+    .drtextBox{
         width: 100%;
-
     }
 
-    /*经典案例*/
-    .imgbox .text{
-        display: none;
+    .ditu{
+        width: 100%;
     }
 
-    .anbox{
-        display: block;
+    .ditubox{
+        width: 100%;
     }
-
-
+    .ditubox ul li{
+        width: 100%;
+    }
+    .user{
+        width:100%;
+    }
+    .user .leftBox{
+        width:100%;
+    }
+    .user .rightBox{
+        width:100%;
+    }
     /*预约*/
 
     .bespeak{
@@ -500,6 +322,17 @@ a{
 
     }
 
+
+}
+
+
+/*标题单独*/
+@media screen and (min-width:546px){
+    /*标题*/
+    .bTitle img{
+        width: 546px;
+        height: 44px;
+    }
 
 }
 
@@ -528,11 +361,20 @@ a{
         display: block;
     }
 
+    .ditubox ul li{
+        width: 49%;
+    }
+    .user .leftBox{
+        width:50%;
+    }
+    .user .rightBox{
+        width: 50%;
+    }
     /*banner*/
-    /*.banner {*/
+    .banner {
 
-        /*height: 400px;*/
-    /*}*/
+        height: 400px;
+    }
 
     /*banner*/
     .banner .con h1{
@@ -552,20 +394,6 @@ a{
     }
 
 
-    .designer .text img{
-
-        width: 100%;
-        height: auto;
-
-    }
-    /*经典案例*/
-    .imgbox .text{
-        display: flex;
-    }
-
-    .anbox{
-        display: none;
-    }
 
 
     /*预约*/
@@ -586,6 +414,12 @@ a{
 
 
 
+
+
+
+
+
+
 }
 
 
@@ -599,11 +433,11 @@ a{
 
     }
 
-    /*!*banner*!*/
-    /*.banner {*/
+    /*banner*/
+    .banner {
 
-        /*height: 525px;*/
-    /*}*/
+        height: 525px;
+    }
 
 }
 
@@ -617,45 +451,51 @@ a{
 
 
 /* PC屏幕:普通屏幕 col-lg-   >1200px */
-@media screen and (min-width:1200px){
-    .title .bigBox{
+@media screen and (min-width:1200px) {
+    .title .bigBox {
         width: 1200px;
         display: flex;
 
     }
-    .title .bigBox .box2{
-        padding:0 22px;
+
+    .title .bigBox .box2 {
+        padding: 0 22px;
 
     }
-
-    /*banner*/
-    .banner {
-
-        height: 650px;
-    }
-
-    .designer{
-
-        width: 1200px;
-
-    }
-
-    /*<!--案例展示-->*/
-        .imgbox{
-            width: 1200px;
-
-        }
-
 
     /*预约*/
-    .bespeak{
+    .bespeak {
         width: 1200px;
 
     }
+    /*图片盒子*/
+    .imgBox{
+        width: 1200px;
 
+    }
+    /*地图文字*/
+    .drtextBox {
+        width: 1160px;
+    }
 
+    .ditu {
+        width: 1160px;
+    }
 
+    .ditubox {
+        width: 1160px;
+    }
 
+    .user {
+        width: 1160px;
+    }
+    .imgBox .null{
+        width: calc(100% - 180px);
 
+    }
 
 }
+
+
+
+
